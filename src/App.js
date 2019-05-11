@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Invoice } from "./Invoice";
+import { InvoiceList } from "./InvoiceList";
+import './css/main.scss';
+import {HashRouter as Router, Link, Route, } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+
+  class Main extends React.Component {
+
+    render(){
+
+      return <div className='container'>
+        <button className='button'><Link className='link' to="/new">Nowa faktura</Link></button>
+        <button className='button'><Link className='link' to="/list">Lista faktur</Link></button>
+      </div>
+    }
+  }
+
+  class App extends React.Component {
+
+    render() {
+      return <Router basename={process.env.PUBLIC_URL}>
+        <div>
+          <Route path={'/'} exact component={Main}/>
+          <Route path={'/new'} component={Invoice}/>
+          <Route path={'/list'} component={InvoiceList}/>
+        </div>
+      </Router>
+    }
+  }
 
 export default App;
