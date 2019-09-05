@@ -25,7 +25,7 @@ class Invoice extends React.Component {
             iNumArr;
         // if(typeof (lsInvoices !== 'undefined') && typeof (lsInvoices !== null)) {
             if(localStorage.getItem('invoices') !== 'undefined' && localStorage.getItem('invoices') !== null) {
-            iNum = JSON.parse(lsInvoices)[JSON.parse(lsInvoices).length -1].invoiceNumber;
+            iNum = JSON.parse(localStorage.getItem('invoices'))[JSON.parse(localStorage.getItem('invoices')).length -1].invoiceNumber;
             iNumArr = iNum.split('/');
             counter = iNumArr[0];
             return (Number(counter) + 1) + '/'  + new Date().toLocaleDateString().slice(3, 10).replace('.', '/');
