@@ -23,7 +23,8 @@ class Invoice extends React.Component {
             counter,
             iNum,
             iNumArr;
-        if(typeof (lsInvoices !== 'undefined') && typeof (lsInvoices !== null)) {
+        // if(typeof (lsInvoices !== 'undefined') && typeof (lsInvoices !== null)) {
+            if(localStorage.getItem('invoices') !== 'undefined' && localStorage.getItem('invoices') !== null) {
             iNum = JSON.parse(lsInvoices)[JSON.parse(lsInvoices).length -1].invoiceNumber;
             iNumArr = iNum.split('/');
             counter = iNumArr[0];

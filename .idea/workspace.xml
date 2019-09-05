@@ -4,6 +4,7 @@
     <list default="true" id="86c4ebb5-d7a2-4fd2-858f-d51f6deae676" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Invoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Invoice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InvoiceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InvoiceList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +14,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
-    <option name="width" value="2056" />
-    <option name="height" value="1558" />
   </component>
   <component name="ProjectId" id="1OUaOVGp2E98MfOSGIXPK8WANFl" />
   <component name="PropertiesComponent">
@@ -51,6 +47,23 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.predeploy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -73,6 +86,7 @@
       <workItem from="1557927207939" duration="641000" />
       <workItem from="1563811736025" duration="1354000" />
       <workItem from="1564034597737" duration="1697000" />
+      <workItem from="1567679024052" duration="1136000" />
     </task>
     <servers />
   </component>
@@ -84,7 +98,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -77,7 +77,7 @@ class InvoiceList extends React.Component {
                 <div className='listInvoices'>{this.state.invoicesElement}</div>
                 <div>
                     <button className='getListOfInvoiceBtn' onClick={this.handleGetInvoices}>Pobierz liste faktur</button>
-                    <button className={'invoiceListBtn'}><Link class={'link'} to="/list/edit">Edytuj fakturę</Link></button>
+                    {/*<button className={'invoiceListBtn'} <Link class={'link'} to="/list/edit">Edytuj fakturę</Link></button>*/}
                     <button className='invoiceListBtn' ><Link className='link' to="/new">Nowa faktura</Link></button>
                 </div>
             </div>
