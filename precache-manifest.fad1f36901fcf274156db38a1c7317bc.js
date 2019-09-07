@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "76423451a2e9cc562e8372945221deca",
+    "revision": "5544882849949508b75bb669dda12961",
     "url": "/invoicesapp/index.html"
   },
   {
-    "revision": "646b9e12c12c1c51d315",
+    "revision": "b8c9b7ada8657c9b137a",
     "url": "/invoicesapp/static/css/main.a5ae01fa.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/invoicesapp/static/js/2.a52efe93.chunk.js"
   },
   {
-    "revision": "646b9e12c12c1c51d315",
-    "url": "/invoicesapp/static/js/main.0875eb4a.chunk.js"
+    "revision": "b8c9b7ada8657c9b137a",
+    "url": "/invoicesapp/static/js/main.1bda6050.chunk.js"
   },
   {
     "revision": "e79c1c22b287d817f5c7",
