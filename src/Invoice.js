@@ -19,17 +19,20 @@ class Invoice extends React.Component {
 
     minDate = new Date().toISOString().slice(0, 10);
     setInvoiceNumber = () => {
-        // let lsInvoices = localStorage.getItem('invoices'),
+
         let counter,
             iNum,
             iNumArr;
-        // if(typeof (lsInvoices !== 'undefined') && typeof (lsInvoices !== null)) {
+
+
         if(localStorage.getItem('invoices') !== 'undefined' && localStorage.getItem('invoices') !== null  && localStorage.getItem('invoices').length !== 0) {
+
             iNum = JSON.parse(localStorage.getItem('invoices'))[JSON.parse(localStorage.getItem('invoices')).length -1].invoiceNumber;
             iNumArr = iNum.split('/');
             counter = iNumArr[0];
             return (Number(counter) + 1) + '/'  + new Date().toLocaleDateString().slice(3, 10).replace('.', '/');
         }else {
+
             return 1 + '/'  + new Date().toLocaleDateString().slice(3, 10).replace('.', '/');
         }
 
