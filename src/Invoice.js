@@ -25,16 +25,21 @@ class Invoice extends React.Component {
             iNumArr;
 
 
-        if(localStorage.getItem('invoices') !== 'undefined' && localStorage.getItem('invoices') !== null  && localStorage.getItem('invoices').length !== 0) {
+        if(localStorage.getItem('invoices') !== null ) {
             console.log('if');
-            iNum = JSON.parse(localStorage.getItem('invoices'))[JSON.parse(localStorage.getItem('invoices')).length -1].invoiceNumber;
-            iNumArr = iNum.split('/');
-            counter = iNumArr[0];
-            return (Number(counter) + 1) + '/'  + new Date().toLocaleDateString().slice(3, 10).replace('.', '/');
+            if(localStorage.getItem('invoices') !== 'undefined'  && localStorage.getItem('invoices').length !== 0) {
+//         if(localStorage.getItem('invoices') !== 'undefined' && localStorage.getItem('invoices') !== null  && localStorage.getItem('invoices').length !== 0) {
+                console.log('if 2');
+                iNum = JSON.parse(localStorage.getItem('invoices'))[JSON.parse(localStorage.getItem('invoices')).length -1].invoiceNumber;
+                iNumArr = iNum.split('/');
+                counter = iNumArr[0];
+                return (Number(counter) + 1) + '/'  + new Date().toLocaleDateString().slice(3, 10).replace('.', '/');
+            }
         }else {
             console.log('else');
             return 1 + '/'  + new Date().toLocaleDateString().slice(3, 10).replace('.', '/');
         }
+
 
     };
 
